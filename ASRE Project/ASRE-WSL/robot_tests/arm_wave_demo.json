@@ -1,0 +1,80 @@
+{
+    "actionName": "arm_wave_demo",
+    "valid": true,
+    "execution": {
+        "blocking": true,
+        "interpolation": "linear"
+    },
+    "audio": {
+        "text": "Testing wave movement with arm.",
+        "file": "audio/hello.wav",
+        "startTime": 0.3
+    },
+    "movementSequence": [
+        {
+            "time": 0.0,
+            "movements": [
+                {
+                    "joint": "RShoulderPitch",
+                    "angle": 0.0
+                },
+                {
+                    "joint": "RElbowRoll",
+                    "angle": 0.0
+                }
+            ]
+        },
+        {
+            "time": 1,
+            "movements": [
+                {
+                    "joint": "RShoulderPitch",
+                    "angle": -0.6
+                },
+                {
+                    "joint": "RElbowRoll",
+                    "angle": 0.5
+                }
+            ]
+        },
+        {
+            "time": 2,
+            "movements": [
+                {
+                    "joint": "RShoulderPitch",
+                    "angle": -0.3
+                },
+                {
+                    "joint": "RElbowRoll",
+                    "angle": -0.3
+                }
+            ]
+        },
+        {
+            "time": 3,
+            "movements": [
+                {
+                    "joint": "RShoulderPitch",
+                    "angle": -0.6
+                },
+                {
+                    "joint": "RElbowRoll",
+                    "angle": 0.5
+                }
+            ]
+        },
+        {
+            "time": 4,
+            "movements": [
+                {
+                    "joint": "RShoulderPitch",
+                    "angle": 0.5
+                },
+                {
+                    "joint": "RElbowRoll",
+                    "angle": 0.0
+                }
+            ]
+        }
+    ]
+}

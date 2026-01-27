@@ -1,0 +1,10 @@
+in-class/
+my-venv/
+venv/
+__pycache__/
+.pytest_cache/
+capstone-test-files/
+githubssh
+githubssh.pub
+logs/
+.coverage

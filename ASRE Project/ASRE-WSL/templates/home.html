@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <title>ASRE – Main</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../static/styles.css">
+  <script defer src="../static/app.js"></script>
+</head>
+<body class="glow-all">
+  <!-- Top Bar -->
+  <header class="topbar">
+    <button class="settings-btn" title="Settings" aria-haspopup="dialog" aria-controls="settings-modal">
+      <span class="gear">⚙️</span>
+      <span class="label">Settings</span>
+    </button>
+    <button id="kill-switch" class="kill-btn" title="Emergency Stop">
+    ⛔ Kill 
+  </button>
+    
+  </header>
+
+  <!-- Settings Modal -->
+  <div id="settings-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="settings-title" hidden>
+    <div class="modal">
+      <div class="modal-head">
+        <h2 id="settings-title">Settings</h2>
+        <button class="modal-close" aria-label="Close settings">✕</button>
+      </div>
+
+       <form id="settings-form" class="settings-grid">
+
+        <!-- Theme -->
+        <div class="field">
+          <label for="theme-select"><strong>Theme</strong></label>
+          <select id="theme-select" name="theme">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+            <option value="cb">Color-blind</option>
+          </select>
+        </div>
+
+        <div class="field">
+  <label for="theme-cb-mode">Color-blind mode</label>
+  <select id="theme-cb-mode" class="select">
+    <option value="">Default color-blind</option>
+    <option value="cb-protan">Protan (red-weak)</option>
+    <option value="cb-deutan">Deutan (green-weak)</option>
+    <option value="cb-tritan">Tritan (blue-yellow)</option>
+    <option value="cb-mono">High contrast mono</option>
+  </select>
+</div>
+
+        <div class="field">
+          <label for="btn-size"><strong>Button size</strong></label>
+          <select id="btn-size">
+            <option value="normal" selected>Normal</option>
+            <option value="large">Large</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="font-size"><strong>Font size</strong></label>
+          <select id="font-size">
+            <option value="s">Small</option>
+            <option value="m" selected>Medium</option>
+            <option value="l">Large</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="ip-input"><strong>IP</strong></label>
+          <input
+            id="ip-input"
+            type="text"
+            inputmode="decimal"
+            placeholder="127.0.0.1"
+          />
+          <small>Robot IP address used when connecting.</small>
+        </div>
+
+        <div class="field">
+          <label for="port-input"><strong>Port</strong></label>
+          <input id="port-input" type="number" min="1" max="65535" value="9559" />
+          <small>Used by backend requests after connect.</small>
+        </div>
+
+        <fieldset class="field">
+          <legend><strong>Accessibility</strong></legend>
+          <label class="check"><input id="acc-contrast" type="checkbox" /> <span>High contrast</span></label>
+          <label class="check"><input id="acc-focus" type="checkbox" /> <span>Always show focus ring</span></label>
+        </fieldset>
+
+        <div class="field">
+          <strong>Help</strong>
+          <p><a href="#" id="help-link">Open Help &amp; Troubleshooting</a></p>
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" class="btn ghost" id="settings-cancel">Cancel</button>
+          <button type="submit" class="btn primary">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Main Layout -->
+  <main class="layout">
+    <!-- Left: Movement Controls -->
+    <section class="left-pane">
+      <section class="card controls" role="region" aria-labelledby="movement-title">
+        <h2 id="movement-title">Movement Controls</h2>
+        <div class="dpad-wrapper" aria-label="Directional pad">
+           <div class="dpad">
+            <button class="control up"    aria-label="Up">▲</button>
+            <button class="control left"  aria-label="Left">◀</button>
+            <button class="control stop"  aria-label="Stop">■</button>
+            <button class="control right" aria-label="Right">▶</button>
+            <button class="control down"  aria-label="Down">▼</button>
+           </div>
+         </div>
+
+      </section>
+
+      <!-- Error / Alert Center -->
+     <div id="error-center"
+     class="card"
+     aria-live="assertive"
+     aria-relevant="additions"
+     style="margin-top: 16px;">
+     <div class="card-header">
+      <strong>Robot Feedback</strong>
+       <div class="actions">
+      <button id="error-center-clear" class="btn btn-secondary btn-sm" type="button">Clear</button>
+    </div>
+  </div>
+  <div id="error-list" class="card-body" role="region" aria-label="Recent messages">
+    <!-- alerts will be injected here -->
+  </div>
+ </div>
+
+           <!-- Speak Box -->
+      <div id="speak-card"
+           class="card"
+           style="margin-top: 16px;"
+           role="region"
+           aria-label="Speak with robot">
+        <div class="card-header">
+          <strong>Speak to Robot</strong>
+        </div>
+
+        <div id="speak-list"
+             class="card-body"
+             role="region"
+             aria-label="Dialogue with robot">
+        </div>
+
+        <form id="speak-form" class="speak-form" style="padding: 10px 12px 12px;">
+          <label for="speak-input" class="sr-only">Type a message to the robot</label>
+          <input id="speak-input"
+                 type="text"
+                 class="input"
+                 placeholder="Type a message…"
+                 autocomplete="off">
+          <button type="submit" class="btn primary">
+            Send
+          </button>
+        </form>
+      </div>
+    </section>
+    
+    <!-- Right: Actions / Custom Panel -->
+    <section class="right-pane">
+      <div class="card control-panel" role="region" aria-labelledby="panel-title">
+        <h2 id="panel-title" class="sr-only">Control Panel</h2>
+
+        <!-- Tab Radios -->
+        <input class="tab-radio" type="radio" id="tab-actions" name="tab" checked>
+
+        <!-- Tab Headers -->
+        <div class="tabs" role="tablist">
+          <label class="tab-btn" for="tab-actions" role="tab" aria-controls="panel-actions" aria-selected="true">Actions</label>
+        </div>
+
+        <!-- Actions Panel (Dynamic) -->
+        <div id="panel-actions" class="tab-content" role="tabpanel" aria-labelledby="tab-actions">
+          <div class="actions-toolbar" role="region" aria-label="Action controls">
+            <div class="search-wrap">
+              <span class="search-icn">🔎</span>
+              <input id="action-search" type="search" class="input"
+                     placeholder="Search actions… (name, label, category)"
+                     aria-label="Search actions" />
+            </div>
+
+            <select id="action-category" class="select" aria-label="Filter by category">
+              <option value="">All Categories</option>
+            </select>
+
+            <label class="checkbox">
+              <input id="action-show-hidden" type="checkbox" />
+              <span>Show Hidden</span>
+            </label>
+
+            <button id="action-refresh" class="btn" type="button" aria-label="Refresh actions">↻ Refresh</button>
+          </div>
+
+          <div id="actions-grid" class="actions-grid" aria-live="polite" aria-busy="false"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Edit Metadata Modal -->
+  <div id="meta-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="meta-modal-title" hidden>
+    <div class="modal">
+      <div class="modal-head">
+        <h2 id="meta-modal-title">Edit Metadata</h2>
+        <button class="modal-close" data-close-meta aria-label="Close">✕</button>
+      </div>
+
+      <form id="meta-form" class="form-grid">
+        <input type="hidden" name="id" id="meta-id" />
+        <label><span>Label</span><input id="meta-label" name="label" class="input" placeholder="e.g., Wave Hello" required /></label>
+        <label><span>Category</span><input id="meta-category" name="category" class="input" placeholder="e.g., Movement" /></label>
+        <label><span>Color</span><input id="meta-color" name="color" class="input" type="color" value="#4f46e5" /></label>
+        <label><span>Icon (emoji or short text)</span><input id="meta-icon" name="icon" class="input" placeholder="e.g., 👋" maxlength="3" /></label>
+        <div class="modal-actions">
+          <button type="button" class="btn ghost" data-close-meta>Cancel</button>
+          <button type="submit" class="btn primary">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>ASRE Project — Otto, Kirsten, Jarett, Shelby (2025)</p>
+  </footer>
+</body> 
+</html>

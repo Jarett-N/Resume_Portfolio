@@ -1,0 +1,44 @@
+{
+    "actionName": "head_turn_velocity_test",
+    "valid": true,
+    "execution": {
+        "blocking": true,
+        "interpolation": "linear"
+    },
+    "audio": {
+        "text": "Testing velocity control of head movement.",
+        "startTime": 0.2
+    },
+    "movementSequence": [
+        {
+            "time": 0.0,
+            "movements": [
+                {
+                    "joint": "HeadYaw",
+                    "velocity": 0.3,
+                    "duration": 5.0
+                }
+            ]
+        },
+        {
+            "time": 6.0,
+            "movements": [
+                {
+                    "joint": "HeadYaw",
+                    "velocity": -0.3,
+                    "duration": 5.0
+                }
+            ]
+        },
+        {
+            "time": 11.0,
+            "movements": [
+                {
+                    "joint": "HeadYaw",
+                    "velocity": 0.0,
+                    "duration": 3
+                }
+            ]
+        }
+    ]
+}

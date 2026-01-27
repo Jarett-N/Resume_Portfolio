@@ -1,0 +1,1 @@
+This is a simulation to see how quickly rabbits would populate given an amount of males or females and how many days the simulation would run. It would go off of random numbers for litters and sex of kits, as well as amount of time for rabbits pregnant to give birth. All was coded on Java using random numbers and individual 'rabbits' through a linked list.

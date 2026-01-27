@@ -1,0 +1,40 @@
+
+{
+  "HeadYaw": { "min": -119.5, "max": 119.5 },
+  "HeadPitch": { "min": -38.5, "max": 29.5 },
+  
+  "LShoulderPitch": { "min": -119.5, "max": 119.5 },
+  "RShoulderPitch": { "min": -119.5, "max": 119.5 },
+  
+  "LShoulderRoll": { "min": -18.0, "max": 76.0 },
+  "RShoulderRoll": { "min": -80.0, "max": 18.0 },
+  
+  "LElbowYaw": { "min": -119.5, "max": 119.5 },
+  "RElbowYaw": { "min": -119.5, "max": 119.5 },
+  
+  "LElbowRoll": { "min": -89.5, "max": -2.0 },
+  "RElbowRoll": { "min": 2.0, "max": 98.5 },
+  
+  "LWristYaw": { "min": -104.5, "max": 104.5 },
+  "RWristYaw": { "min": -104.5, "max": 104.5 },
+  
+  "LHand": { "min": 0.0, "max": 1.0 },
+  "RHand": { "min": 0.0, "max": 1.0 },
+  
+  "LHipYawPitch": { "min": -65.62, "max": 42.44 },
+  
+  "LHipPitch": { "min": -88.0, "max": 27.73 },
+  "RHipPitch": { "min": -88.0, "max": 27.73 },
+  
+  "LHipRoll": { "min": -21.74, "max": 45.29 },
+  "RHipRoll": { "min": -45.29, "max": 21.74 },
+  
+  "LKneePitch": { "min": -5.29, "max": 121.04 },
+  "RKneePitch": { "min": -5.29, "max": 121.04 },
+  
+  "LAnklePitch": { "min": -68.15, "max": 52.86 },
+  "RAnklePitch": { "min": -68.15, "max": 52.86 },
+  
+  "LAnkleRoll": { "min": -22.79, "max": 44.06 },
+  "RAnkleRoll": { "min": -44.06, "max": 22.79 }
+}

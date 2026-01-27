@@ -1,0 +1,395 @@
+{
+  "actionName": "04A_0001",
+  "id": 8,
+  "category": "Elephant",
+  "label": [
+    "Elephant"
+  ],
+  "color": "#6366f1",
+  "icon": "\ud83d\udeb6",
+  "valid": true,
+  "totalTime": 6.88,
+  "movementSequence": [
+    {
+      "type": "jointMovement",
+      "time": 0.48,
+      "joints": {
+        "HeadPitch": -12.2,
+        "HeadYaw": -2.6,
+        "RElbowRoll": 71.5,
+        "RElbowYaw": 81.5,
+        "RHand": 0.66,
+        "RShoulderPitch": 45.6,
+        "RWristYaw": 28.3
+      },
+      "velocity": null
+    },
+    {
+      "type": "jointMovement",
+      "time": 0.56,
+      "joints": {
+        "LElbowRoll": -48.7,
+        "LHand": 0.08,
+        "LShoulderPitch": 11.2,
+        "LWristYaw": -43.9
+      },
+      "velocity": null
+    },
+    {
+      "type": "jointMovement",
+      "time": 0.88,
+      "joints": {
+        "HeadPitch": 29.5,
+        "HeadYaw": -21.4,
+        "RElbowRoll": 30.6,
+        "RElbowYaw": 70.8345,
+        "RShoulderPitch": 30.4,
+        "RShoulderRoll": 12.5928,
+        "RWristYaw": -73.0,
+        "LAnklePitch": -1.76024,
+        "LAnkleRoll": -8.25942,
+        "LHipPitch": -24.1678,
+        "LHipRoll": 5.80326,
+        "LHipYawPitch": -16.5212,
+        "LKneePitch": 27.8593,
+        "RAnklePitch": -2.1949,
+        "RAnkleRoll": 10.2857,
+        "RHipPitch": -23.1179,
+        "RHipRoll": -7.11683,
+        "RHipYawPitch": -16.5212,
+        "RKneePitch": 26.7215
+      },
+      "velocity": null
+    },
+    {
+      "type": "jointMovement",
+      "time": 0.96,
+      "joints": {
+        "LElbowRoll": -88.5,
+        "LElbowYaw": 0.0,
+        "LHand": 0.602755,
+        "LShoulderPitch": -23.1,
+        "LShoulderRoll": 8.00403,
+        "LWristYaw": 0.0
+      },
+      "velocity": null
+    },
+    {
+      "type": "jointMovement",
+      "time": 1.4,
+      "joints": {
+        "RHand": 0.602465
+      },
+      "velocity": null
+    },
+    {
+      "type": "jointMovement",
+      "time": 1.44,
+      "joints": {
+        "RElbowRoll": 2.0
+      },
+      "velocity": null
+    },
+    {
+      "type": "jointMovement",
+      "time": 1.84,
+      "joints": {
+        "LAnklePitch": -7.03374,
+        "LAnkleRoll": -8.4352,
+        "LHipPitch": 7.38531,
+        "LHipRoll": 8.61579,
+        "LHipYawPitch": -10.5446,
+        "LKneePitch": 15.5544,
+        "RAnklePitch": -4.48007,
+        "RAnkleRoll": 12.3951,
+        "RHipPitch": 11.3356,
+        "RHipRoll": -11.9509,
+        "RHipYawPitch": -10.5446,
+        "RKneePitch": 7.56109
+      },
+      "velocity": null
+    },
+    {
+      "type": "jointMovement",
+      "time": 1.96,
+      "joints": {
+        "HeadPitch": 8.55243,
+        "HeadYaw": -21.2458,
+        "RElbowYaw": 71.103,
+        "RShoulderPitch": -28.9992,
+        "RShoulderRoll": 10.8939,
+        "RWristYaw": -72.8936
+      },
+      "velocity": null
+    },
+    {
+      "type": "jointMovement",
+      "time": 2.04,
+      "joints": {
+        "LElbowRoll": -88.5,
+        "LElbowYaw": 1.60444,
+        "LHand": 0.602755,
+        "LShoulderPitch": -37.4943,
+        "LShoulderRoll": 8.88428,
+        "LWristYaw": 0.0
+      },
+      "velocity": null
+    },
+    {
+      "type": "jointMovement",
+      "time": 2.48,
+      "joints": {
+        "RElbowRoll": 50.6986,
+        "RHand": 0.98
+      },
+      "velocity": null
+    },
+    {
+      "type": "jointMovement",
+      "time": 3.24,
+      "joints": {
+        "LAnklePitch": -8.5279,
+        "LAnkleRoll": -7.99575,
+        "LHipPitch": -39.9883,
+        "LHipRoll": 5.01224,
+        "LHipYawPitch": -14.4997,
+        "LKneePitch": 43.7677,
+        "RAnklePitch": -12.1267,
+        "RAnkleRoll": 7.20952,
+        "RHipPitch": -40.4326,
+        "RHipRoll": -3.68905,
+        "RHipYawPitch": -14.4997,
+        "RKneePitch": 46.6729
+      },
+      "velocity": null
+    },
+    {
+      "type": "jointMovement",
+      "time": 3.36,
+      "joints": {
+        "HeadPitch": 29.5,
+        "HeadYaw": -21.4,
+        "RElbowRoll": 30.6,
+        "RElbowYaw": 70.8345,
+        "RShoulderPitch": 30.4,
+        "RShoulderRoll": 12.5928,
+        "RWristYaw": -73.0
+      },
+      "velocity": null
+    },
+    {
+      "type": "jointMovement",
+      "time": 3.44,
+      "joints": {
+        "LElbowRoll": -88.5,
+        "LElbowYaw": 0.0,
+        "LHand": 0.602755,
+        "LShoulderPitch": -23.1,
+        "LShoulderRoll": 8.00403,
+        "LWristYaw": 0.0
+      },
+      "velocity": null
+    },
+    {
+      "type": "jointMovement",
+      "time": 3.88,
+      "joints": {
+        "RHand": 0.602465
+      },
+      "velocity": null
+    },
+    {
+      "type": "jointMovement",
+      "time": 3.92,
+      "joints": {
+        "RElbowRoll": 2.0
+      },
+      "velocity": null
+    },
+    {
+      "type": "jointMovement",
+      "time": 4.32,
+      "joints": {
+        "LAnklePitch": -7.03374,
+        "LAnkleRoll": -8.4352,
+        "LHipPitch": 7.38531,
+        "LHipRoll": 8.61579,
+        "LHipYawPitch": -10.5446,
+        "LKneePitch": 15.5544,
+        "RAnklePitch": -4.48007,
+        "RAnkleRoll": 12.3951,
+        "RHipPitch": 11.3356,
+        "RHipRoll": -11.9509,
+        "RHipYawPitch": -10.5446,
+        "RKneePitch": 7.56109
+      },
+      "velocity": null
+    },
+    {
+      "type": "jointMovement",
+      "time": 4.44,
+      "joints": {
+        "HeadPitch": 8.55243,
+        "HeadYaw": -21.2458,
+        "RElbowYaw": 71.103,
+        "RShoulderPitch": -28.9992,
+        "RShoulderRoll": 10.8939,
+        "RWristYaw": -72.8936
+      },
+      "velocity": null
+    },
+    {
+      "type": "jointMovement",
+      "time": 4.52,
+      "joints": {
+        "LElbowRoll": -88.5,
+        "LElbowYaw": 1.60444,
+        "LHand": 0.602755,
+        "LShoulderPitch": -37.4943,
+        "LShoulderRoll": 8.88428,
+        "LWristYaw": 0.0
+      },
+      "velocity": null
+    },
+    {
+      "type": "jointMovement",
+      "time": 4.96,
+      "joints": {
+        "RElbowRoll": 50.6986,
+        "RHand": 0.98
+      },
+      "velocity": null
+    },
+    {
+      "type": "jointMovement",
+      "time": 5.64,
+      "joints": {
+        "LAnklePitch": -8.5279,
+        "LAnkleRoll": -7.99575,
+        "LHipPitch": -39.9883,
+        "LHipRoll": 5.01224,
+        "LHipYawPitch": -14.4997,
+        "LKneePitch": 43.7677,
+        "RAnklePitch": -12.1267,
+        "RAnkleRoll": 7.20952,
+        "RHipPitch": -40.4326,
+        "RHipRoll": -3.68905,
+        "RHipYawPitch": -14.4997,
+        "RKneePitch": 46.6729
+      },
+      "velocity": null
+    },
+    {
+      "type": "jointMovement",
+      "time": 5.76,
+      "joints": {
+        "HeadPitch": 29.5,
+        "HeadYaw": -21.4,
+        "RElbowRoll": 30.6,
+        "RElbowYaw": 70.8345,
+        "RShoulderPitch": 30.4,
+        "RShoulderRoll": 12.5928,
+        "RWristYaw": -73.0
+      },
+      "velocity": null
+    },
+    {
+      "type": "jointMovement",
+      "time": 5.84,
+      "joints": {
+        "LElbowRoll": -88.5,
+        "LElbowYaw": 0.0,
+        "LHand": 0.602755,
+        "LShoulderPitch": -23.1,
+        "LShoulderRoll": 8.00403,
+        "LWristYaw": 0.0
+      },
+      "velocity": null
+    },
+    {
+      "type": "jointMovement",
+      "time": 6.28,
+      "joints": {
+        "HeadPitch": 15.7302,
+        "HeadYaw": 2.107,
+        "RElbowRoll": 73.9193,
+        "RElbowYaw": 80.067,
+        "RHand": 0.1,
+        "RShoulderPitch": 91.0582,
+        "RShoulderRoll": 11.9478,
+        "RWristYaw": 50.6232
+      },
+      "velocity": null
+    },
+    {
+      "type": "jointMovement",
+      "time": 6.36,
+      "joints": {
+        "LElbowRoll": -70.4868,
+        "LElbowYaw": -77.7866,
+        "LHand": 0.1,
+        "LShoulderPitch": 87.6256,
+        "LShoulderRoll": 0.349159,
+        "LWristYaw": -17.3171
+      },
+      "velocity": null
+    },
+    {
+      "type": "jointMovement",
+      "time": 6.68,
+      "joints": {
+        "LAnklePitch": 4.91954,
+        "LAnkleRoll": -7.55628,
+        "LHipPitch": 7.64898,
+        "LHipRoll": 5.45169,
+        "LHipYawPitch": -8.96255,
+        "LKneePitch": -5.27591,
+        "RAnklePitch": 5.71537,
+        "RAnkleRoll": 7.4732,
+        "RHipPitch": 7.20472,
+        "RHipRoll": -5.18321,
+        "RHipYawPitch": -8.96255,
+        "RKneePitch": -4.74374
+      },
+      "velocity": null
+    },
+    {
+      "type": "jointMovement",
+      "time": 6.8,
+      "joints": {
+        "HeadPitch": -11.2525,
+        "HeadYaw": -1.23289,
+        "RElbowRoll": 23.9968,
+        "RElbowYaw": 68.7289,
+        "RHand": 0.308,
+        "RShoulderPitch": 87.8941,
+        "RShoulderRoll": -7.12163,
+        "RWristYaw": 4.91954
+      },
+      "velocity": null
+    },
+    {
+      "type": "jointMovement",
+      "time": 6.88,
+      "joints": {
+        "LElbowRoll": -24.2557,
+        "LElbowYaw": -68.6458,
+        "LHand": 0.3092,
+        "LShoulderPitch": 87.9772,
+        "LShoulderRoll": 6.67737,
+        "LWristYaw": 5.09532
+      },
+      "velocity": null
+    }
+  ],
+  "execution": {
+    "interpolation": "linear",
+    "blocking": false
+  },
+  "audio": {
+    "text": "Elephant",
+    "externalFile": "elephant.ogg",
+    "startTime": 0.0,
+    "blocking": false
+  }
+}

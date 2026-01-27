@@ -1,0 +1,70 @@
+{
+    "actionName": "wave",
+    "id": 12345,
+    "category": "greeting",
+    "label": [
+        "friendly",
+        "casual"
+    ],
+    "color": "blue",
+    "icon": "hand-wave",
+    "valid": true,
+    "totalTime": 2.5,
+    "movementSequence": [
+        {
+            "type": "jointMovement",
+            "time": 0.0,
+            "joints": {
+                "right_arm": {
+                    "position": 0,
+                    "speed": 1.0
+                },
+                "right_hand": {
+                    "position": 0,
+                    "speed": 1.0
+                }
+            },
+            "velocity": null
+        },
+        {
+            "type": "jointMovement",
+            "time": 1.0,
+            "joints": {
+                "right_arm": {
+                    "position": 10,
+                    "speed": 5.0
+                },
+                "right_hand": {
+                    "position": 10,
+                    "speed": 5.0
+                }
+            },
+            "velocity": null
+        },
+        {
+            "type": "jointMovement",
+            "time": 2.0,
+            "joints": {
+                "right_arm": {
+                    "position": 0,
+                    "speed": 2.0
+                },
+                "right_hand": {
+                    "position": 0,
+                    "speed": 2.0
+                }
+            },
+            "velocity": null
+        }
+    ],
+    "execution": {
+        "interpolation": "linear",
+        "blocking": false
+    },
+    "audio": {
+        "text": "Hello there!",
+        "externalFile": "hello.ogg",
+        "startTime": 1.0,
+        "blocking": false
+    }
+}

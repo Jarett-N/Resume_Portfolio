@@ -1,0 +1,63 @@
+{
+    "actionName": "dual_arm_velocity_test",
+    "valid": true,
+    "execution": {
+        "blocking": true,
+        "interpolation": "linear"
+    },
+    "audio": {
+        "text": "The link didn't work, dumb idiot",
+        "externalFile": "http://freetestdata.com/wp-content/uploads/2021/09/Free_Test_Data_1MB_MP3.mp3",
+        "startTime": 0.2
+    },
+    "movementSequence": [
+        {
+            "time": 0.0,
+            "type": "jointVelocity",
+            "movements": [
+                {
+                    "joint": "LShoulderPitch",
+                    "velocity": -0.4,
+                    "duration": 1.8
+                },
+                {
+                    "joint": "RShoulderPitch",
+                    "velocity": -0.4,
+                    "duration": 1.8
+                }
+            ]
+        },
+        {
+            "time": 2.2,
+            "type": "jointVelocity",
+            "movements": [
+                {
+                    "joint": "LShoulderPitch",
+                    "velocity": 0.3,
+                    "duration": 1.6
+                },
+                {
+                    "joint": "RShoulderPitch",
+                    "velocity": 0.3,
+                    "duration": 1.6
+                }
+            ]
+        },
+        {
+            "time": 4.2,
+            "type": "jointVelocity",
+            "movements": [
+                {
+                    "joint": "LShoulderPitch",
+                    "velocity": 0.0,
+                    "duration": 0.1
+                },
+                {
+                    "joint": "RShoulderPitch",
+                    "velocity": 0.0,
+                    "duration": 0.1
+                }
+            ]
+        }
+    ]
+}
