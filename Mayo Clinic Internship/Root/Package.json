@@ -1,0 +1,9 @@
+{
+    "name": "group2research",
+    "version": "1.0.0",
+    "main": "server/app.js",
+    "scripts": {
+      "start": "node server/app.js"
+    }
+  }
+  
